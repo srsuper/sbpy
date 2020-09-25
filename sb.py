@@ -54,7 +54,7 @@ def restartBot():
     os.execl(python, python, *sys.argv)
 def logError(text):
     ayam.log("[ ERROR ] {}".format(str(text)))
-    tz = pytz.timezone("Asia/Jakarta")
+    tz = pytz.timezone("Asia/Bangkok")
     timeNow = datetime.now(tz=tz)
     timeHours = datetime.strftime(timeNow,"(%H:%M)")
     day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -216,7 +216,7 @@ def ayamBot(op):
                 msg_id = msg.id
                 receiver = msg.to
                 sender = msg._from
-                creatormid = "u95f5fcc0013c63589bd45685aeaeda24"
+                creatormid = "u0b499ce24e07b16ec12f8d0ba3ef8438"
                 if msg.toType == 0 or msg.toType == 1 or msg.toType == 2:
                     #if msg.contentType == 6:
                         #if msg.toType == 0:
